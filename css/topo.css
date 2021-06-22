@@ -1,0 +1,61 @@
+#topo{
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+#linha-topo{
+    background-color: rgb(219, 205, 0);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#linha-centro-topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.link-topo{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.link-topo:hover{
+    color: white;
+}
+
+.shopping-cart-link{
+    text-decoration: none;
+    color: white;    
+    cursor: pointer;
+}
+
+#search{
+    width: 400px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 10px 0px 0px 10px;   
+    padding-left: 10px;
+}
+
+#search-form{
+    display: flex;
+}
+
+#search-button{
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;    
+    background-color: white;
+}
+
+#search-button:hover{
+    color: rgb(121, 121, 121);
+}

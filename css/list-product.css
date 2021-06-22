@@ -1,0 +1,49 @@
+#conteudo-list-product{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+}
+
+#sidebar{
+    background-color: rgb(247, 245, 245);
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    padding: 20px 0px 20px 20px;
+}
+#container-list{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.sidebar-links{
+    text-decoration: none;
+    color: black;
+}
+
+.input-price{
+    width: 50px;
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid black;
+}
+
+
+#filtrar-botao{
+    width: 137px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: rgb(0, 99, 185);
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+#filtrar-botao:hover{
+    background-color: white;
+    border: 1px solid rgb(0, 99, 185);
+    color: black;
+}

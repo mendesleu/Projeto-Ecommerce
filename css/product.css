@@ -1,0 +1,95 @@
+
+#conteudo-produto{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#produto-topo{
+    display: flex;
+    justify-content: center;
+}
+
+#showcase-product{
+    display: flex;
+    flex-direction: column;
+}
+
+#destaque-area-img{
+    width: 300px;
+    height: 300px;
+}
+
+#imagem-destaque{
+    width: 100%;
+    height: 100%;
+}
+
+#menu-img-product{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.img-menu-product{
+    width: 100%;
+    height: 100%;
+}
+
+.div-product-img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+#price-info{
+    width: 400px;
+    height: 370px;
+    margin-left: 100px;
+}
+
+#frete{
+    background-color: rgb(228, 228, 228);
+    height: 40px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#calcular{
+    background-color: rgb(228, 228, 228);
+    height: 40px;
+    width: 70px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#frete-form{
+    display: flex;
+    margin-top: 10px;
+}
+
+#comprar-botao{
+    background-color: black;
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 20px 20px 20px 20px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#comprar-botao:hover{
+    background-color: rgb(41, 41, 41);
+}
+
+#descricao-product{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 900px;
+    margin-top: 50px;
+}
