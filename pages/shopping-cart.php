@@ -130,17 +130,7 @@
                 <div class="list-shopping-cart">
                     <h4 style="width: 300px; text-align: center;">Cadeira Eames Eiffel Preta</h4>
                     <div style="width: 100px; display: flex; justify-content: center;">
-                        <select id="select-quantidade" name="select-quantidade">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        </select>
+                        <input type="text" id="select-quantidade" name="select-quantidade">                        
                     </div>
                     <h4 style="width: 100px; text-align: center;">R$ 135,00</h4>
                 </div>
