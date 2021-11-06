@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Online</title>
 
-    <?php
-    
-        include "css.html"
-
-    ?>
+    <link rel="stylesheet" media="all" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/topo.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/cards.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/footer.css">
 
 </head>
 <body>
