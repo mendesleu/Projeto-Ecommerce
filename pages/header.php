@@ -27,71 +27,8 @@
         </div>
             </div><!-- Fim Linha Centro Topo -->
 
-            <nav>
-                <ul>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul></li>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                            <li><a href="#">Item</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+        <?php
+            include "menu.php";
+        ?>
 
     </header>
