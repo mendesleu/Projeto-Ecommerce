@@ -8,7 +8,7 @@
     <div id="container-top">
         <div style="width: 250px;">
             <a href="index.html">
-                <img src="assets/logo.png" alt="logo" style="width: 100%;">
+                <img src="../assets/logo.png" alt="logo" style="width: 100%;">
              </a>
         </div>
 
@@ -20,7 +20,7 @@
         <div id="shopping-cart">
             <div style="width: 60px; display: flex; justify-content: center;">
                 <a href="#" class="shopping-cart-link">
-                    <img src="assets/shopping-cart.png" alt="shopping-cart" style="width: 100%;">
+                    <img src="../assets/shopping-cart.png" alt="shopping-cart" style="width: 100%;">
                 </a>
             </div>
             <label><a href="#" class="shopping-cart-link">Carrinho</a></label>

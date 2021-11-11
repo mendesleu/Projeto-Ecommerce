@@ -33,16 +33,16 @@
 
         <div style="display: flex; flex-direction: row;">
             <div style="width: 30px; margin-right: 5px">
-                <a href="#"><img src="assets/social/face.png" alt="face" style="width: 100%;"></a>
+                <a href="#"><img src="../assets/social/face.png" alt="face" style="width: 100%;"></a>
             </div>
             <div style="width: 30px; margin-right: 5px">
-                <a href="#"><img src="assets/social/insta.png" alt="insta" style="width: 100%;"></a>
+                <a href="#"><img src="../assets/social/insta.png" alt="insta" style="width: 100%;"></a>
             </div>
             <div style="width: 30px; margin-right: 5px">
-                <a href="#"><img src="assets/social/maps.png" alt="maps" style="width: 100%;"></a>
+                <a href="#"><img src="../assets/social/maps.png" alt="maps" style="width: 100%;"></a>
             </div>
             <div style="width: 30px; margin-right: 5px">
-                <a href="#"><img src="assets/social/whats.png" alt="whats" style="width: 100%;"></a>
+                <a href="#"><img src="../assets/social/whats.png" alt="whats" style="width: 100%;"></a>
             </div>
         </div>
 
@@ -52,8 +52,8 @@
 
 <div style="margin-top: 30px; margin-bottom: 20px;">
     <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
-        <img src="assets/correios.png" alt="correios" style="width: 100px; margin-right: 30px;">
-        <img src="assets/pagseguro.png" alt="pagseguro" style="width: 120px">
+        <img src="../assets/correios.png" alt="correios" style="width: 100px; margin-right: 30px;">
+        <img src="../assets/pagseguro.png" alt="pagseguro" style="width: 120px">
     </div>
 </div>
 
