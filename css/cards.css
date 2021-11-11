@@ -1,0 +1,30 @@
+.cards{
+    /* background-color: rgb(226, 226, 226); */
+    width: 230px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.img-card{
+    width: 150px;
+    margin-top: 20px;
+}
+
+.text-card{
+    margin-left: 10px;
+}
+
+.cards:hover{
+    background-color: white;
+    box-shadow: 2px 5px 10px -3px black;
+}
+
+.link-cards{
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    margin-top: 20px;
+}
