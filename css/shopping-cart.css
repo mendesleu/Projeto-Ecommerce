@@ -1,0 +1,38 @@
+#container-cart-description{
+    width: 800px;
+    height: auto;
+    background-color: rgb(235, 235, 235);display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.box-cart-description{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    justify-content: center;
+}
+
+#container-cart-price{
+    width: 350px;
+    margin-left: 10px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+}
+
+#button-finalizar{
+    width: 220px;
+    height: 30px;
+    background-color: rgb(6, 63, 107);
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#button-finalizar:hover{
+    background-color: rgb(10, 84, 141);
+}
