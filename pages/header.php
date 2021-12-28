@@ -2,7 +2,7 @@
 
     <div id="line-top">
         <label style="margin-right: 20px;"><a href="#" class="link-top">Login</a></label>
-        <label style="margin-right: 20px;"><a href="#" class="link-top">Cadastre-se</a></label>
+        <label style="margin-right: 20px;"><a href="cad-user.php" class="link-top">Cadastre-se</a></label>
     </div>
 
     <div id="container-top">
@@ -19,7 +19,7 @@
 
         <div id="shopping-cart">
             <div style="width: 60px; display: flex; justify-content: center;">
-                <a href="#" class="shopping-cart-link">
+                <a href="shopping-cart.php" class="shopping-cart-link">
                     <img src="../assets/shopping-cart.png" alt="shopping-cart" style="width: 100%;">
                 </a>
             </div>
