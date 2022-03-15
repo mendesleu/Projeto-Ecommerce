@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Global =========================================================*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    min-height: 91.5vh;
+    padding-top: 30px;
+    /* border: 1px solid black; */
+    background-color: rgb(238, 238, 238);
+}
+/* Global =========================================================*/
+
+
+/* Menu ===========================================================*/
+nav{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 10pt;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    padding: 10px 10px;
+    color: white;
+    width: 200px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(66, 66, 66);
+    width: 200px;
+    cursor: pointer;
+}
+
+/* DropDown */
+
+ul{
+    float: left;
+}
+
+ul li{
+    position: relative;
+    float: left;
+}
+
+ul li ul{
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 0;
+    background-color: black;
+    width: 220px;
+}
+
+ul li:hover ul, ul li.over ul{
+    display: block;
+}
+
+ul li ul li{
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px;
+}
+/* Menu ===========================================================*/
