@@ -288,3 +288,99 @@ textarea::placeholder{
 #infoEstoque{
   display: none;
 }
+
+/* Cadastrar */
+
+
+
+/* Listar */
+
+#containerListarProduto{
+  background-color: white;
+  border: 1px solid rgb(167, 167, 167);
+
+  width: 800px;
+  height: auto;
+
+  padding: 30px 30px 30px 30px;
+  margin-top: 50px;
+}
+
+input[type=search]{
+  border: 1px solid rgb(167, 167, 167);
+  width: 300px;
+  height: 40px;
+
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+#containerSearch{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  border-bottom: 1px solid rgb(167, 167, 167);
+  padding-bottom: 30px;
+}
+
+#containerListar{
+  padding-top: 30px;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.boxListar{
+  display: flex;
+  flex-direction: row;
+  font-size: 10pt;
+}
+
+.boxListar.first{
+  border: 1px solid rgb(167, 167, 167);
+  padding: 5px;
+  background-color: rgb(236, 236, 236);
+}
+
+.boxListar.second{
+  padding: 20px 5px 20px 5px;
+
+  border-left: 1px solid rgb(167, 167, 167);
+  border-right: 1px solid rgb(167, 167, 167);
+  border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+.boxNomeProduto{
+  text-transform: capitalize;
+  white-space: nowrap;
+
+  text-overflow: clip;
+  overflow: hidden;
+}
+
+#containerPaginacao{
+  font-size: 10pt;
+  display: flex;
+  
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.boxPaginacao{
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid black;
+  color: black;
+  margin-left: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgb(167, 167, 167);
+  background-color: rgb(236, 236, 236);
+}

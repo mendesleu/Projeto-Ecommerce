@@ -4,14 +4,14 @@
             <li><a href="">Vendas</a>
                 <ul>
                     <li><a href="">Listar Pedidos</a></li>
-                    <li><a href="produtos/cadastrar_produto.php">Criar Pedido</a></li>
+                    <li><a href="">Criar Pedido</a></li>
                     <li><a href="">Clientes</a></li>
                 </ul>
             </li>
             <li><a href="">Produtos</a>
                 <ul>
-                    <li><a href="">Listar Produtos</a></li>
-                    <li><a href="">Cadastrar Produtos</a></li>
+                    <li><a href="../produtos/listar_produtos.php">Listar Produtos</a></li>
+                    <li><a href="../produtos/cadastrar_produto.php">Cadastrar Produtos</a></li>
                     <li><a href="">Categoria</a></li>
                     <li><a href="">Marcas</a></li>
                 </ul>
