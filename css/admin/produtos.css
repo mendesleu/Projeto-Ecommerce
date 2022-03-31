@@ -282,8 +282,8 @@ textarea::placeholder{
   padding: 10px;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
-
 
 #infoEstoque{
   display: none;
@@ -384,3 +384,37 @@ input[type=search]{
   border: 1px solid rgb(167, 167, 167);
   background-color: rgb(236, 236, 236);
 }
+/* Listar */
+
+/* Modal */
+#formFiltrar{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectFiltrar{
+  width: 190px;
+  margin-bottom: 20px;
+}
+
+#botaoLimparFiltro{
+  color: red;
+  font-size: 10pt;
+}
+
+.tituloBox.tituloFiltrar{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+#botaoFecharModal{
+  background-color: transparent;
+  color: black;
+  
+  font-size: 15pt;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* Modal */
