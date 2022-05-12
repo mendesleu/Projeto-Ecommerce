@@ -25,10 +25,10 @@ session_start();
             document.getElementById('modalFiltrar').style.display = 'none';
         }
 
-        function marcarTodos(){
+        function marcarTodos() {
             let x = document.getElementById('marcarTodos').checked;
 
-            if(x == true){
+            if (x == true) {
                 document.class
             }
         }
@@ -48,7 +48,7 @@ session_start();
 
             <div id="containerSearch">
 
-                <form action="" method="POST">
+                <form action="" method="GET">
                     <input type="search" name="search" placeholder="Buscar por nome ou SKU">
                     <button class="botao">Buscar</button>
                 </form>
@@ -71,7 +71,7 @@ session_start();
                 <?php
 
                 $pg = isset($_GET['pg']) ? $_GET['pg'] : "1";
-                $search = isset($_POST['search']) ? $_POST['search'] : "all";
+                $search = isset($_POST['search']) ? $_POST['search'] : "";
 
                 // Quantidade maxima a exibir por pagina
                 $maximo = 10;
@@ -79,13 +79,7 @@ session_start();
                 // Calcula a página de qual valor será exibido
                 $inicio = ($maximo * $pg) - $maximo;
 
-                if ($search == 'all') {
-                    $select_type = "SELECT * FROM produtos LIMIT $inicio, $maximo";
-                } else {
-                    $select_type = "SELECT * FROM produtos WHERE sku LIKE '%$search%' OR nome LIKE '%$search%' OR ean LIKE '%$search%'";
-                }
-
-                $select = $select_type;
+                $select = "SELECT * FROM produtos WHERE sku LIKE '%$search%' OR nome LIKE '%$search%' OR ean LIKE '%$search%' LIMIT $inicio, $maximo";
                 $query = mysqli_query($conn, $select);
 
                 if ($query->num_rows > 0) {
@@ -93,7 +87,7 @@ session_start();
                 ?>
 
                         <div class="boxListar second">
-                            <div style="display: flex; align-items:center; margin-right:10px"><input type="checkbox" id="marcarId<?= $listar['id_produto']?>"></div>
+                            <div style="display: flex; align-items:center; margin-right:10px"><input type="checkbox" id="marcarId<?= $listar['id_produto'] ?>"></div>
                             <div style="width: 300px;" class="boxNomeProduto"><?= $listar['nome'] ?></div>
                             <div style="width: 100px; text-align: center; text-transform: capitalize;"><?= $listar['categoria'] ?></div>
                             <div style="width: 100px; text-align: center;">R$ <?= number_format($listar['venda'], 2, ",", ".") ?></div>
@@ -112,9 +106,9 @@ session_start();
                 }
 
                 // Paginação
-                $selectPG = "SELECT id_produto FROM produtos";
-                $query = mysqli_query($conn, $selectPG);
-
+                $totalPG = 0;
+                $select = "SELECT * FROM produtos WHERE sku LIKE '%$search%' OR nome LIKE '%$search%' OR ean LIKE '%$search%'";
+                $query = mysqli_query($conn, $select);
                 if ($query->num_rows > 0) {
                     // Total de registro da tabela
                     $numTotal = mysqli_num_rows($query);
@@ -138,8 +132,7 @@ session_start();
                     ?>
 
                         <a href="?pg=<?= $anterior ?>">
-                            <div class="boxPaginacao"><strong>
-                                    << /strong>
+                            <div class="boxPaginacao nome"><strong>Anterior</strong>
                             </div>
                         </a>
 
@@ -178,7 +171,7 @@ session_start();
                     ?>
 
                         <a href="?pg=<?= $posterior ?>">
-                            <div class="boxPaginacao"><strong>></strong></div>
+                            <div class="boxPaginacao nome"><strong>Próximo</strong></div>
                         </a>
 
                     <?php
@@ -227,14 +220,14 @@ session_start();
 
                             <label class="titulo">Produto em destaque</label>
                             <select class="selectFiltrar" name="destaque">
-                                <option>Selecionar</option>
+                                <option value="">Selecionar</option>
                                 <option>Sim</option>
                                 <option>Não</option>
                             </select>
 
                             <label class="titulo">Produto em sem estoque</label>
                             <select class="selectFiltrar" name="estoque">
-                                <option>Selecionar</option>
+                                <option value="">Selecionar</option>
                                 <option>Sim</option>
                                 <option>Não</option>
                             </select>
