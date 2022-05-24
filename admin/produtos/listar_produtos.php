@@ -60,7 +60,7 @@ session_start();
             <div id="containerListar">
 
                 <div class="boxListar first">
-                    <div style="display: flex; align-items:center; margin-right:10px"><input type="checkbox" onclick="marcarTodos()" id="marcarTodos"></div>
+                    <div style="display: flex; align-items:center; margin-right:10px"><input type="checkbox" id="checkAll"></div>
                     <div style="width: 300px;"><strong>Produto</strong></div>
                     <div style="width: 100px; text-align: center;"><strong>Categoria</strong></div>
                     <div style="width: 100px; text-align: center;"><strong>Preço</strong></div>
@@ -71,7 +71,7 @@ session_start();
                 <?php
 
                 $pg = isset($_GET['pg']) ? $_GET['pg'] : "1";
-                $search = isset($_POST['search']) ? $_POST['search'] : "";
+                $search = isset($_GET['search']) ? $_GET['search'] : "";
 
                 // Quantidade maxima a exibir por pagina
                 $maximo = 10;
@@ -87,7 +87,7 @@ session_start();
                 ?>
 
                         <div class="boxListar second">
-                            <div style="display: flex; align-items:center; margin-right:10px"><input type="checkbox" id="marcarId<?= $listar['id_produto'] ?>"></div>
+                            <div style="display: flex; align-items:center; margin-right:10px"><input type="checkbox" class="check"></div>
                             <div style="width: 300px;" class="boxNomeProduto"><?= $listar['nome'] ?></div>
                             <div style="width: 100px; text-align: center; text-transform: capitalize;"><?= $listar['categoria'] ?></div>
                             <div style="width: 100px; text-align: center;">R$ <?= number_format($listar['venda'], 2, ",", ".") ?></div>
@@ -100,6 +100,7 @@ session_start();
                                 } ?>
                             </div>
                         </div>
+
 
                 <?php
                     }
@@ -186,6 +187,7 @@ session_start();
 
     </main>
 
+    <!-- Modal ==================== -->
     <div class="containerModal" id="modalFiltrar" style="display: none;">
         <div class="boxModal">
             <div class="boxConteudoModal">
@@ -247,7 +249,20 @@ session_start();
             </div>
         </div>
     </div>
+    <!-- Modal ==================== -->
 
+    <!-- Marcar todos checkbox -->
+    <script>
+        let checkbox = document.querySelectorAll('.check');
+        let checkAll = document.querySelector('#checkAll');
+
+        checkAll.addEventListener('click', () => {
+            for (let current of checkbox) {
+                current.checked = !current.checked
+            }
+        })
+    </script>
+    <!-- Marcar todos checkbox -->
 </body>
 
 </html>
