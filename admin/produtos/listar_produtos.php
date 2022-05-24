@@ -13,8 +13,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Produtos - Ecommerce</title>
 
-    <link rel="stylesheet" media="all" type="text/css" href="../../css/admin/style.css" />
-    <link rel="stylesheet" media="all" type="text/css" href="../../css/admin/produtos.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="../../assets/css/admin/style.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="../../assets/css/admin/produtos.css" />
 
     <script>
         function openModal() {
@@ -23,14 +23,6 @@ session_start();
 
         function closeModal() {
             document.getElementById('modalFiltrar').style.display = 'none';
-        }
-
-        function marcarTodos() {
-            let x = document.getElementById('marcarTodos').checked;
-
-            if (x == true) {
-                document.class
-            }
         }
     </script>
 
@@ -227,7 +219,7 @@ session_start();
                                 <option>Não</option>
                             </select>
 
-                            <label class="titulo">Produto em sem estoque</label>
+                            <label class="titulo">Produto sem estoque</label>
                             <select class="selectFiltrar" name="estoque">
                                 <option value="">Selecionar</option>
                                 <option>Sim</option>
