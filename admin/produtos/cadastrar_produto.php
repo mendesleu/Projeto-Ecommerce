@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Produto - Ecommerce</title>
 
-    <link rel="stylesheet" media="all" type="text/css" href="../../css/admin/style.css" />
-    <link rel="stylesheet" media="all" type="text/css" href="../../css/admin/produtos.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="../../assets/css/admin/style.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="../../assets/css/admin/produtos.css" />
 
 
     <script>
@@ -60,7 +60,7 @@
                         <label class="titulo">Produto em Destaque?</label><br>
 
                         <label class="switch">
-                            <input type="checkbox" value="destaque" name="destaque">
+                            <input type="checkbox" value="ativo" name="destaque">
                             <span class="slider"></span>
                         </label>
                     </div>
@@ -192,8 +192,8 @@
 
                     <label class="titulo">Quando o estoque zerar</label><br>
                     <select name="acaoEstoque">
-                        <option>Continuar vendendo normalmente</option>
-                        <option>Mudar para indisponível</option>
+                        <option value="normalmente">Continuar vendendo normalmente</option>
+                        <option value="indisponivel">Mudar para indisponível</option>
                     </select>
                 </div>
 

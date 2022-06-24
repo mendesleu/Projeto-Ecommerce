@@ -45,7 +45,7 @@ session_start();
                     <button class="botao">Buscar</button>
                 </form>
 
-                <button class="botao" onclick="openModal()">Filtrar</button>
+                <!-- <button class="botao" onclick="openModal()">Filtrar</button> -->
 
             </div>
 
@@ -70,8 +70,10 @@ session_start();
 
                 // Calcula a página de qual valor será exibido
                 $inicio = ($maximo * $pg) - $maximo;
-
-                $select = "SELECT * FROM produtos WHERE sku LIKE '%$search%' OR nome LIKE '%$search%' OR ean LIKE '%$search%' LIMIT $inicio, $maximo";
+                
+                $select = "SELECT * FROM produtos 
+                           WHERE sku LIKE '%$search%' OR nome LIKE '%$search%' OR ean LIKE '%$search%'
+                           LIMIT $inicio, $maximo";
                 $query = mysqli_query($conn, $select);
 
                 if ($query->num_rows > 0) {
@@ -98,6 +100,10 @@ session_start();
                     }
                 }
 
+                #
+                #
+                #
+                #
                 // Paginação
                 $totalPG = 0;
                 $select = "SELECT * FROM produtos WHERE sku LIKE '%$search%' OR nome LIKE '%$search%' OR ean LIKE '%$search%'";
@@ -172,8 +178,16 @@ session_start();
                     ?>
 
                 </div>
+                <!-- 
+                # Container Paginação 
+                #
+                #
+                #
+                #
+                -->
 
             </div>
+            <!-- Container Listar -->
 
         </section>
 
@@ -199,13 +213,15 @@ session_start();
                             <label class="titulo">Ordenar por</label>
                             <select class="selectFiltrar" name="ordem">
                                 <option value="alfabetica">Ordem alfabetica</option>
+                                <option value="ultimos">Últimos Produtos</option>
+                                <option value="destaque">Destaque</option>
                             </select>
 
                             <label class="titulo">Status do produto</label>
                             <select class="selectFiltrar" name="status">
-                                <option>Todos</option>
-                                <option>Ativos</option>
-                                <option>Inativos</option>
+                                <option value="">Todos</option>
+                                <option value="ativos">Ativos</option>
+                                <option value="inativos">Inativos</option>
                             </select>
 
                         </div>
@@ -215,15 +231,15 @@ session_start();
                             <label class="titulo">Produto em destaque</label>
                             <select class="selectFiltrar" name="destaque">
                                 <option value="">Selecionar</option>
-                                <option>Sim</option>
-                                <option>Não</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
                             </select>
 
                             <label class="titulo">Produto sem estoque</label>
                             <select class="selectFiltrar" name="estoque">
                                 <option value="">Selecionar</option>
-                                <option>Sim</option>
-                                <option>Não</option>
+                                <option value="sim">Sim</option>
+                                <option value="nao">Não</option>
                             </select>
 
                         </div>

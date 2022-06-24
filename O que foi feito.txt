@@ -1,0 +1,10 @@
+Feito:
+# Correção de Back
+
+
+Fazendo:
+# Filtrar Search
+
+
+Fazer:
+# Ações checkbox selecionados

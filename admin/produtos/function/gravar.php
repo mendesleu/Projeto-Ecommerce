@@ -6,22 +6,20 @@ session_start();
 
 $nome = $_POST['produto'];
 $ativado = isset($_POST['ativado']) ? $_POST['ativado'] : "";
-$destaque = isset($_POST['destaque']) ? $_POST['destaque'] : "";
+$destaque = isset($_POST['destaque'])?$_POST['destaque']:"";
 
-if (isset($_POST['novo'])) {
-    $situacao = 'novo';
-} else {
-    $situacao = 'usado';
-}
-
+$situacao = $_POST['situacao'];
 $descricao = $_POST['descricao'];
 $video = $_POST['linkVideo'];
+
 $custo = $_POST['custo'];
 $venda = $_POST['venda'];
 $promocional = $_POST['promocional'];
+
 $sku = $_POST['sku'];
 $ean = $_POST['ean'];
 $ncm = $_POST['ncm'];
+
 $estoque = isset($_POST['estoque']) ? $_POST['estoque'] : "";
 if ($estoque == 'estoque') {
     $quantidade = $_POST['quantidade'];
@@ -30,12 +28,15 @@ if ($estoque == 'estoque') {
     $quantidade = 0;
     $acaoEstoque = 'nada';
 }
+
 $peso = $_POST['peso'];
 $altura = $_POST['altura'];
 $comprimento = $_POST['comprimento'];
+
 $largura = $_POST['largura'];
 $categoria = $_POST['categoria'];
 $marca = $_POST['marca'];
+
 $titleCeo = $_POST['titleCeo'];
 $descricaoCeo = $_POST['descriptionCeo'];
 $url = $_POST['url'];
